@@ -396,9 +396,16 @@ export default function Projects() {
         </div>
 
         {/* Projects Grid */}
-        <div key={activeFilter} className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div
+          key={activeFilter}
+          className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6"
+        >
           {displayed.map((project, i) => (
-            <ProjectCard key={`${activeFilter}-${i}`} project={project} index={i} />
+            <ProjectCard
+              key={`${activeFilter}-${i}`}
+              project={project}
+              index={i}
+            />
           ))}
         </div>
 

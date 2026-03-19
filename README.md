@@ -1,10 +1,10 @@
 # 🚀 Glenard Pagurayan — Portfolio (React + Vite + Tailwind CSS)
 
-A modern, fully responsive personal portfolio website built with **Vite + React + Tailwind CSS**, designed for GitHub Pages deployment.
+A modern, fully responsive personal portfolio website built with **Vite + React + Tailwind CSS**, deployed on **GitHub Pages** for free.
 
 ## 🌐 Live Site
 
-**[https://glenn-it.github.io/Glenard-Portfolio/](https://glenn-it.github.io/Glenard-Portfolio/)**
+**[https://glenn-it.github.io/Glenn_Portfolio/](https://glenn-it.github.io/Glenn_Portfolio/)**
 
 ---
 

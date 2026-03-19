@@ -2,11 +2,11 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
 // https://vitejs.dev/config/
-// Base is set to the NEW GitHub repository name: GlennPortfolio
-// Live URL will be: https://glenn-it.github.io/GlennPortfolio/
+// Base is set to the GitHub repository name: Glenn_Portfolio
+// Live URL will be: https://glenn-it.github.io/Glenn_Portfolio/
 export default defineConfig({
   plugins: [react()],
-  base: "/GlennPortfolio/",
+  base: "/Glenn_Portfolio/",
   build: {
     outDir: "dist",
     assetsDir: "assets",

@@ -1,12 +1,14 @@
 import { ExternalLink, Github, Filter } from "lucide-react";
 import { useState, useEffect, useRef } from "react";
 
+const base = import.meta.env.BASE_URL;
+
 const projects = [
   {
     title: "Water Billing Management System",
     description:
       "A full-featured web-based system for managing water utility billing, customer accounts, meter readings, and payment tracking. Includes admin dashboard and reporting.",
-    image: null,
+    image: `${base}Water Billing Management System.png`,
     gradient: "from-blue-500/20 to-cyan-500/10",
     tags: ["PHP", "MySQL", "JavaScript", "Bootstrap", "jQuery", "AJAX"],
     github: "https://github.com/Glenn-IT/wbms",
@@ -18,7 +20,7 @@ const projects = [
     title: "Youth Information System (PMS)",
     description:
       "A comprehensive barangay management system for tracking youth (SK) member profiles, events, QR attendance, announcements, and officials. Features QR code integration.",
-    image: null,
+    image: `${base}Youth Information System.png`,
     gradient: "from-amethyst-500/20 to-purple-500/10",
     tags: ["PHP", "MySQL", "JavaScript", "CSS", "QR Code API", "Bootstrap"],
     github: "https://github.com/Glenn-IT/pms",
@@ -30,7 +32,7 @@ const projects = [
     title: "JB Printing Services",
     description:
       "Full e-commerce web platform for a printing business. Includes product catalog, cart, checkout, order management, design uploads, GCash payment, and email notifications via PHPMailer.",
-    image: null,
+    image: `${base}JB Printing Services.png`,
     gradient: "from-orange-500/20 to-red-500/10",
     tags: ["PHP", "MySQL", "CSS", "PHPMailer", "Bootstrap", "JavaScript"],
     github: "https://github.com/Glenn-IT/JB_Printing_Services",
@@ -42,7 +44,7 @@ const projects = [
     title: "PTODA Booking App",
     description:
       "Android mobile application for booking tricycle (PTODA) rides. Built with Kotlin, connected to a PHP REST API backend for real-time booking management.",
-    image: null,
+    image: `${base}PTODA Booking App.png`,
     gradient: "from-green-500/20 to-teal-500/10",
     tags: ["Kotlin", "Android", "PHP API", "MySQL", "REST API"],
     github: "https://github.com/Glenn-IT/PTODABookingApp",
@@ -54,7 +56,7 @@ const projects = [
     title: "OTAS – Online Task & Attendance System",
     description:
       "Web-based system for managing employee tasks and tracking attendance. Features role-based access control, task assignment, and status tracking.",
-    image: null,
+    image: `${base}Online Task & Attendance System.png`,
     gradient: "from-slate_blue-500/20 to-indigo-500/10",
     tags: ["JavaScript", "PHP", "MySQL", "Bootstrap", "AJAX"],
     github: "https://github.com/Glenn-IT/otas",
@@ -66,7 +68,7 @@ const projects = [
     title: "BAC – Bidding & Awards Committee System",
     description:
       "Government procurement management system for tracking bids, resolutions, and contract awards. Designed for compliance with RA 9184.",
-    image: null,
+    image: `${base}Bidding & Awards Committee System.png`,
     gradient: "from-federal_blue-500/20 to-blue-500/10",
     tags: ["PHP", "MySQL", "HTML", "CSS", "JavaScript"],
     github: "https://github.com/Glenn-IT/bac-system",
@@ -78,7 +80,7 @@ const projects = [
     title: "Shakira Salon Online",
     description:
       "Online booking and showcase website for a salon business. Features service listings, appointment booking, and gallery section.",
-    image: null,
+    image: `${base}Shakira Salon Online.png`,
     gradient: "from-pink-500/20 to-rose-500/10",
     tags: ["HTML", "CSS", "JavaScript", "Bootstrap"],
     github: "https://github.com/Glenn-IT/Shakira-Salon_Online",
@@ -90,7 +92,7 @@ const projects = [
     title: "Attendance Monitoring System",
     description:
       "Web-based attendance monitoring and timekeeping application for organizations. Tracks employee check-in/out and generates attendance reports.",
-    image: null,
+    image: `${base}Attendance Monitoring System.png`,
     gradient: "from-violet_blue-500/20 to-purple-500/10",
     tags: ["PHP", "MySQL", "HTML", "CSS", "JavaScript"],
     github: "https://github.com/Glenn-IT/Attendance_Monitoring",
@@ -102,7 +104,7 @@ const projects = [
     title: "Doctor Appointment System",
     description:
       "Patients can schedule appointments with doctors or dentists. Includes SMS/Email reminders and admin management panel.",
-    image: null,
+    image: `${base}Doctor Appointment System.png`,
     gradient: "from-cyan-500/20 to-blue-500/10",
     tags: ["PHP", "MySQL", "SMS API", "Email API", "Bootstrap"],
     github: "https://github.com/Glenn-IT",

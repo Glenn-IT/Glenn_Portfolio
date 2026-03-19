@@ -304,6 +304,19 @@ export default function Projects() {
 
   const displayed = showAll ? filtered : filtered.slice(0, 6);
 
+  // Re-trigger reveal animations whenever displayed projects change
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      if (sectionRef.current) {
+        sectionRef.current.querySelectorAll(".reveal").forEach((el, i) => {
+          el.classList.remove("visible");
+          setTimeout(() => el.classList.add("visible"), i * 60);
+        });
+      }
+    }, 50);
+    return () => clearTimeout(timer);
+  }, [activeFilter, showAll]);
+
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -381,9 +394,9 @@ export default function Projects() {
         </div>
 
         {/* Projects Grid */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div key={activeFilter} className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {displayed.map((project, i) => (
-            <ProjectCard key={i} project={project} index={i} />
+            <ProjectCard key={`${activeFilter}-${i}`} project={project} index={i} />
           ))}
         </div>
 

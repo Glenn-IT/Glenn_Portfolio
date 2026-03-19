@@ -79,24 +79,9 @@ export default function About() {
               {/* Image */}
               <div className="relative w-80 h-96 rounded-3xl overflow-hidden border border-amethyst-500/20 shadow-card">
                 <img
-                  src="/P2-removebg.png"
+                  src="/P2.png"
                   alt="Glenard Pagurayan"
                   className="w-full h-full object-cover object-top"
-                  onError={(e) => {
-                    e.target.style.display = "none";
-                    e.target.parentElement.classList.add(
-                      "bg-gradient-to-br",
-                      "from-amethyst-500/20",
-                      "to-klein_blue-500/10",
-                      "flex",
-                      "items-center",
-                      "justify-center",
-                    );
-                    const span = document.createElement("span");
-                    span.className = "text-9xl font-bold text-white/10";
-                    span.textContent = "G";
-                    e.target.parentElement.appendChild(span);
-                  }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a1a]/60 to-transparent" />
               </div>

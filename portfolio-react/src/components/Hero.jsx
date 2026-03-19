@@ -98,7 +98,7 @@ export default function Hero() {
             </p>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-12">
+            <div className="flex flex-col sm:flex-row gap-4 items-center justify-center lg:justify-start mb-12">
               <button
                 onClick={() => handleScroll("projects")}
                 className="group relative px-8 py-4 rounded-xl font-semibold text-white overflow-hidden
@@ -225,17 +225,9 @@ export default function Hero() {
               {/* Avatar container */}
               <div className="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full overflow-hidden border-4 border-amethyst-500/30 shadow-glow-purple animate-float">
                 <img
-                  src="/P1-removebg.png"
+                  src="/P1.png"
                   alt="Glenard Pagurayan"
                   className="w-full h-full object-cover object-top"
-                  onError={(e) => {
-                    e.target.style.display = "none";
-                    e.target.parentElement.innerHTML = `
-                      <div class="w-full h-full bg-gradient-to-br from-amethyst-500/30 to-klein_blue-500/20 flex items-center justify-center">
-                        <span class="text-8xl font-bold text-white/30">G</span>
-                      </div>
-                    `;
-                  }}
                 />
                 {/* Image overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a1a]/40 to-transparent" />

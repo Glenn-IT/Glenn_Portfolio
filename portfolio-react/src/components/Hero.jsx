@@ -225,7 +225,7 @@ export default function Hero() {
               {/* Avatar container */}
               <div className="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full overflow-hidden border-4 border-amethyst-500/30 shadow-glow-purple animate-float">
                 <img
-                  src="/P1.png"
+                  src={`${import.meta.env.BASE_URL}P1.png`}
                   alt="Glenard Pagurayan"
                   className="w-full h-full object-cover object-top"
                 />

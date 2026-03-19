@@ -79,7 +79,7 @@ export default function About() {
               {/* Image */}
               <div className="relative w-80 h-96 rounded-3xl overflow-hidden border border-amethyst-500/20 shadow-card">
                 <img
-                  src="/P2.png"
+                  src={`${import.meta.env.BASE_URL}P2.png`}
                   alt="Glenard Pagurayan"
                   className="w-full h-full object-cover object-top"
                 />

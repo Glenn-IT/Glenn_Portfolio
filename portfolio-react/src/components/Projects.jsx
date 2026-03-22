@@ -234,12 +234,12 @@ function ProjectCard({ project, index }) {
         </span>
 
         {/* Title */}
-        <h3 className="text-lg font-bold text-white mb-2 group-hover:text-amethyst-300 transition-colors duration-300 leading-tight">
+        <h3 className="text-lg font-bold dark:text-white text-gray-900 mb-2 group-hover:text-amethyst-300 transition-colors duration-300 leading-tight">
           {project.title}
         </h3>
 
         {/* Description */}
-        <p className="text-gray-400 text-sm leading-relaxed mb-4 line-clamp-3">
+        <p className="dark:text-gray-400 text-gray-600 text-sm leading-relaxed mb-4 line-clamp-3">
           {project.description}
         </p>
 
@@ -254,7 +254,7 @@ function ProjectCard({ project, index }) {
             </span>
           ))}
           {project.tags.length > 4 && (
-            <span className="px-2 py-0.5 rounded-md text-xs font-medium border border-white/10 text-gray-400">
+            <span className="px-2 py-0.5 rounded-md text-xs font-medium border border-white/10 dark:text-gray-400 text-gray-500">
               +{project.tags.length - 4}
             </span>
           )}
@@ -267,7 +267,7 @@ function ProjectCard({ project, index }) {
               href={project.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-1.5 px-4 py-2 rounded-xl text-sm font-medium text-white bg-amethyst-500/15 border border-amethyst-500/25 hover:bg-amethyst-500/30 transition-all duration-200"
+              className="flex items-center gap-1.5 px-4 py-2 rounded-xl text-sm font-medium dark:text-white text-gray-800 bg-amethyst-500/15 border border-amethyst-500/25 hover:bg-amethyst-500/30 transition-all duration-200"
             >
               <Github size={15} />
               Code
@@ -366,7 +366,7 @@ export default function Projects() {
 
         {/* Filter Tabs */}
         <div className="reveal flex flex-wrap gap-2 justify-center mb-10">
-          <div className="flex items-center gap-1 text-gray-400 mr-2">
+          <div className="flex items-center gap-1 dark:text-gray-400 text-gray-600 mr-2">
             <Filter size={14} />
             <span className="text-xs font-medium">Filter:</span>
           </div>
@@ -380,7 +380,7 @@ export default function Projects() {
               className={`px-4 py-2 rounded-xl text-sm font-medium transition-all duration-300 ${
                 activeFilter === cat
                   ? "bg-gradient-to-r from-amethyst-500 to-slate_blue-500 text-white shadow-glow-purple"
-                  : "bg-white/5 border border-white/10 text-gray-300 hover:bg-amethyst-500/15 hover:border-amethyst-500/30"
+                  : "bg-white/5 border border-white/10 dark:text-gray-300 text-gray-600 hover:bg-amethyst-500/15 hover:border-amethyst-500/30"
               }`}
             >
               {cat}
@@ -423,7 +423,7 @@ export default function Projects() {
             href="https://github.com/Glenn-IT"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 px-8 py-3 rounded-xl font-semibold text-gray-300 border border-white/15 bg-white/5 hover:bg-white/10 hover:border-amethyst-500/30 hover:text-amethyst-400 transition-all duration-300 hover:-translate-y-1"
+            className="flex items-center gap-2 px-8 py-3 rounded-xl font-semibold dark:text-gray-300 text-gray-600 border border-white/15 bg-white/5 hover:bg-white/10 hover:border-amethyst-500/30 hover:text-amethyst-400 transition-all duration-300 hover:-translate-y-1"
           >
             <Github size={18} />
             View GitHub Profile

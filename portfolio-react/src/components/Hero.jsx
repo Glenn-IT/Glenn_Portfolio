@@ -61,7 +61,7 @@ export default function Hero() {
             {/* Status Badge */}
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-amethyst-500/10 border border-amethyst-500/20 mb-8">
               <div className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
-              <span className="text-sm text-gray-300 font-medium">
+              <span className="text-sm dark:text-gray-300 text-gray-600 font-medium">
                 Available for opportunities
               </span>
             </div>
@@ -73,7 +73,7 @@ export default function Hero() {
 
             {/* Name */}
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-extrabold mb-6 leading-tight">
-              <span className="text-white">Glenard</span>
+              <span className="dark:text-white text-gray-900">Glenard</span>
               <br />
               <span className="bg-gradient-to-r from-amethyst-400 via-slate_blue-400 to-klein_blue-400 bg-clip-text text-transparent">
                 Pagurayan
@@ -82,7 +82,7 @@ export default function Hero() {
 
             {/* Typing Role */}
             <div className="flex items-center justify-center lg:justify-start gap-2 mb-6 h-10">
-              <span className="text-xl sm:text-2xl text-gray-200 font-medium">
+              <span className="text-xl sm:text-2xl dark:text-gray-200 text-gray-700 font-medium">
                 {displayed}
               </span>
               <span className="text-amethyst-400 text-2xl font-light animate-pulse">
@@ -91,7 +91,7 @@ export default function Hero() {
             </div>
 
             {/* Value Statement */}
-            <p className="text-gray-400 text-lg max-w-xl mx-auto lg:mx-0 mb-10 leading-relaxed">
+            <p className="dark:text-gray-400 text-gray-600 text-lg max-w-xl mx-auto lg:mx-0 mb-10 leading-relaxed">
               IT Support Specialist &amp; Freelance Developer from the
               Philippines. I build custom web and desktop solutions that solve
               real-world tech challenges for businesses and individuals.
@@ -118,7 +118,7 @@ export default function Hero() {
 
               <button
                 onClick={() => handleScroll("contact")}
-                className="px-8 py-4 rounded-xl font-semibold text-white
+                className="px-8 py-4 rounded-xl font-semibold dark:text-white text-gray-900
                            border border-amethyst-500/40 bg-amethyst-500/10
                            hover:bg-amethyst-500/20 hover:border-amethyst-400
                            transition-all duration-300 hover:-translate-y-1"
@@ -174,7 +174,7 @@ export default function Hero() {
                 />
               </a>
               <div className="h-8 w-px bg-white/10" />
-              <span className="text-sm text-gray-500">PH | Open to Remote</span>
+              <span className="text-sm dark:text-gray-500 text-gray-500">PH | Open to Remote</span>
             </div>
           </div>
 
@@ -235,13 +235,13 @@ export default function Hero() {
 
               {/* Floating skill badges */}
               <div
-                className="absolute -bottom-6 -left-8 bg-[#0f0f2a] border border-amethyst-500/30 rounded-xl px-4 py-2 text-xs font-semibold text-amethyst-400 shadow-glow-purple animate-float"
+                className="absolute -bottom-6 -left-8 dark:bg-[#0f0f2a] bg-white border border-amethyst-500/30 rounded-xl px-4 py-2 text-xs font-semibold text-amethyst-400 shadow-glow-purple animate-float"
                 style={{ animationDelay: "1s" }}
               >
                 💻 Full Stack Dev
               </div>
               <div
-                className="absolute -top-4 -right-4 bg-[#0f0f2a] border border-klein_blue-500/30 rounded-xl px-4 py-2 text-xs font-semibold text-klein_blue-300 shadow-glow-blue animate-float"
+                className="absolute -top-4 -right-4 dark:bg-[#0f0f2a] bg-white border border-klein_blue-500/30 rounded-xl px-4 py-2 text-xs font-semibold text-klein_blue-300 shadow-glow-blue animate-float"
                 style={{ animationDelay: "3s" }}
               >
                 🔧 IT Specialist

@@ -64,7 +64,7 @@ export default function Footer() {
               <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-amethyst-500 to-slate_blue-500 flex items-center justify-center font-bold text-white text-xl shadow-glow-purple">
                 G
               </div>
-              <span className="text-xl font-bold text-white">
+              <span className="text-xl font-bold dark:text-white text-gray-900">
                 Glenard<span className="text-amethyst-400">.</span>
               </span>
             </div>

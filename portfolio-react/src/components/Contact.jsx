@@ -174,10 +174,10 @@ export default function Contact() {
           <div className="lg:col-span-2 space-y-6">
             {/* CTA Card */}
             <div className="reveal card p-6 bg-gradient-to-br from-amethyst-500/10 to-klein_blue-500/5 border border-amethyst-500/20">
-              <h3 className="text-2xl font-bold text-white mb-3">
+              <h3 className="text-2xl font-bold dark:text-white text-gray-900 mb-3">
                 Open to Opportunities
               </h3>
-              <p className="text-gray-400 leading-relaxed mb-6">
+              <p className="dark:text-gray-400 text-gray-600 leading-relaxed mb-6">
                 I&apos;m actively looking for IT Support, Help Desk, and
                 Developer roles. Available immediately and open to relocation or
                 remote work.
@@ -203,10 +203,10 @@ export default function Contact() {
                     <Icon size={18} className="text-amethyst-400" />
                   </div>
                   <div>
-                    <p className="text-xs text-gray-500 font-medium mb-0.5">
+                    <p className="text-xs dark:text-gray-500 text-gray-500 font-medium mb-0.5">
                       {label}
                     </p>
-                    <p className="text-sm text-gray-200">{value}</p>
+                    <p className="text-sm dark:text-gray-200 text-gray-700">{value}</p>
                   </div>
                 </div>
               ))}
@@ -218,7 +218,7 @@ export default function Contact() {
                 href="https://drive.google.com/file/d/1oTESN53KYenGwP9OU3i5vMLF69w1XC5T/view?usp=drive_link"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center gap-2 w-full px-6 py-3 rounded-xl font-medium text-gray-300 border border-white/15 bg-white/5 hover:bg-white/10 hover:border-amethyst-500/30 hover:text-amethyst-400 transition-all duration-300"
+                className="flex items-center justify-center gap-2 w-full px-6 py-3 rounded-xl font-medium dark:text-gray-300 text-gray-600 border border-white/15 bg-white/5 hover:bg-white/10 hover:border-amethyst-500/30 hover:text-amethyst-400 transition-all duration-300"
               >
                 <ExternalLink size={16} />
                 View / Download Resume
@@ -237,7 +237,7 @@ export default function Contact() {
                     href={link.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={`group flex flex-col items-center gap-3 p-5 rounded-2xl bg-[#0f0f2a] border ${link.border} ${link.hover} transition-all duration-300 hover:-translate-y-2 hover:shadow-card`}
+                    className={`group flex flex-col items-center gap-3 p-5 rounded-2xl dark:bg-[#0f0f2a] bg-white border ${link.border} ${link.hover} transition-all duration-300 hover:-translate-y-2 hover:shadow-card`}
                     style={{ transitionDelay: `${i * 40}ms` }}
                   >
                     {/* Icon */}
@@ -249,13 +249,13 @@ export default function Contact() {
 
                     {/* Label */}
                     <div className="text-center">
-                      <p className="font-semibold text-white text-sm group-hover:text-amethyst-300 transition-colors">
+                      <p className="font-semibold dark:text-white text-gray-900 text-sm group-hover:text-amethyst-300 transition-colors">
                         {link.label}
                       </p>
-                      <p className="text-xs text-gray-400 mt-0.5">
+                      <p className="text-xs dark:text-gray-400 text-gray-500 mt-0.5">
                         {link.value}
                       </p>
-                      <p className="text-xs text-gray-600 mt-1">
+                      <p className="text-xs dark:text-gray-600 text-gray-500 mt-1">
                         {link.description}
                       </p>
                     </div>

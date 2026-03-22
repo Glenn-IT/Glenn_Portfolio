@@ -32,6 +32,80 @@
     background-size: 50px 50px;
   }
 
+  /* Light mode — fix hardcoded white text */
+  html:not(.dark) .text-white {
+    color: #1a1a2e !important;
+  }
+  html:not(.dark) .text-gray-200,
+  html:not(.dark) .text-gray-300,
+  html:not(.dark) .text-gray-400,
+  html:not(.dark) .text-gray-500 {
+    color: #4b4b6b !important;
+  }
+  html:not(.dark) .text-gray-500 {
+    color: #6b6b8a !important;
+  }
+
+  /* Light mode — fix hardcoded dark backgrounds */
+  html:not(.dark) .bg-\[\#0a0a1a\]\/95,
+  html:not(.dark) .bg-\[\#0f0f2a\],
+  html:not(.dark) .bg-\[\#0f0f2a\]\/90,
+  html:not(.dark) .bg-\[\#0a0a1a\]\/40,
+  html:not(.dark) .bg-\[\#0a0a1a\]\/60 {
+    background-color: rgba(255, 255, 255, 0.95) !important;
+  }
+
+  /* Light mode — cards */
+  html:not(.dark) .card,
+  html:not(.dark) [class*="from-\[\#0f0f2a\]"] {
+    background: linear-gradient(135deg, #ffffff, #f3f0ff) !important;
+    border-color: rgba(155, 89, 182, 0.2) !important;
+  }
+
+  /* Light mode — floating badges (cert, experience) */
+  html:not(.dark) .shadow-glow-purple {
+    box-shadow: 0 4px 20px rgba(155, 89, 182, 0.15);
+  }
+
+  /* Light mode — status bar border */
+  html:not(.dark) .border-white\/10,
+  html:not(.dark) .border-white\/8,
+  html:not(.dark) .border-white\/15 {
+    border-color: rgba(155, 89, 182, 0.2) !important;
+  }
+
+  /* Light mode — bg-white/5, bg-white/3 */
+  html:not(.dark) .bg-white\/5,
+  html:not(.dark) .bg-white\/3 {
+    background-color: rgba(155, 89, 182, 0.06) !important;
+  }
+
+  /* Light mode — skill bar track */
+  html:not(.dark) .bg-white\/10 {
+    background-color: rgba(155, 89, 182, 0.12) !important;
+  }
+
+  /* Light mode — gradient overlays on images */
+  html:not(.dark) .from-\[\#0f0f2a\] {
+    --tw-gradient-from: rgba(240, 236, 255, 0.7);
+  }
+  html:not(.dark) .from-\[\#0a0a1a\]\/60 {
+    background: linear-gradient(to top, rgba(240,236,255,0.6), transparent) !important;
+  }
+
+  /* Light mode — mobile menu hamburger lines */
+  html:not(.dark) .hamburger-line {
+    background-color: #1f2937;
+  }
+
+  /* Light mode — section-title and section-subtitle */
+  html:not(.dark) .section-title {
+    color: #1a1a2e;
+  }
+  html:not(.dark) .section-subtitle {
+    color: #4b4b6b;
+  }
+
   * {
     box-sizing: border-box;
   }

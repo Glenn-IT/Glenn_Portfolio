@@ -87,14 +87,14 @@ export default function About() {
               </div>
 
               {/* Floating cert badge */}
-              <div className="absolute -bottom-5 -right-5 bg-[#0f0f2a] border border-amethyst-500/30 rounded-2xl p-4 shadow-glow-purple">
+              <div className="absolute -bottom-5 -right-5 dark:bg-[#0f0f2a] bg-white border border-amethyst-500/30 rounded-2xl p-4 shadow-glow-purple">
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-amethyst-500 to-slate_blue-500 flex items-center justify-center">
                     <Shield size={20} className="text-white" />
                   </div>
                   <div>
-                    <p className="text-xs text-gray-400">Certified</p>
-                    <p className="text-sm font-semibold text-white">
+                    <p className="text-xs dark:text-gray-400 text-gray-500">Certified</p>
+                    <p className="text-sm font-semibold dark:text-white text-gray-900">
                       Google IT Support
                     </p>
                   </div>
@@ -102,10 +102,10 @@ export default function About() {
               </div>
 
               {/* Experience badge */}
-              <div className="absolute -top-5 -left-5 bg-[#0f0f2a] border border-klein_blue-500/30 rounded-2xl p-4 shadow-glow-blue">
+              <div className="absolute -top-5 -left-5 dark:bg-[#0f0f2a] bg-white border border-klein_blue-500/30 rounded-2xl p-4 shadow-glow-blue">
                 <div className="text-center">
                   <p className="text-2xl font-bold text-klein_blue-300">2+</p>
-                  <p className="text-xs text-gray-400">Years Experience</p>
+                  <p className="text-xs dark:text-gray-400 text-gray-500">Years Experience</p>
                 </div>
               </div>
             </div>
@@ -114,21 +114,21 @@ export default function About() {
           {/* Right — Text */}
           <div className="space-y-6">
             <div className="reveal">
-              <h3 className="text-2xl font-bold text-white mb-4">
+              <h3 className="text-2xl font-bold dark:text-white text-gray-900 mb-4">
                 IT Specialist &amp; Freelance Developer
               </h3>
-              <div className="space-y-4 text-gray-400 leading-relaxed">
+              <div className="space-y-4 dark:text-gray-400 text-gray-600 leading-relaxed">
                 <p>
                   I&apos;m{" "}
                   <span className="text-amethyst-400 font-semibold">
                     Glenard Pagurayan
                   </span>
                   , an IT Support Specialist with{" "}
-                  <span className="text-white font-medium">
+                  <span className="dark:text-white text-gray-900 font-medium">
                     1 year and 11 months
                   </span>{" "}
                   of hands-on experience at{" "}
-                  <span className="text-white font-medium">
+                  <span className="dark:text-white text-gray-900 font-medium">
                     COMELEC Region 2
                   </span>
                   , providing technical IT support and system maintenance in a
@@ -139,10 +139,10 @@ export default function About() {
                 <p>
                   On the development side, I build full-stack web and desktop
                   applications using{" "}
-                  <span className="text-white font-medium">
+                  <span className="dark:text-white text-gray-900 font-medium">
                     PHP, C#, MySQL, JavaScript,
                   </span>{" "}
-                  and <span className="text-white font-medium">Kotlin</span> —
+                  and <span className="dark:text-white text-gray-900 font-medium">Kotlin</span> —
                   delivering real-world solutions like billing systems,
                   e-commerce platforms, and Android booking apps.
                 </p>
@@ -170,12 +170,12 @@ export default function About() {
               {highlights.map(({ icon: Icon, text }, i) => (
                 <div
                   key={i}
-                  className="flex items-center gap-3 px-4 py-3 rounded-xl bg-white/3 border border-white/8 hover:border-amethyst-500/30 transition-all duration-300"
+                  className="flex items-center gap-3 px-4 py-3 rounded-xl dark:bg-white/3 bg-amethyst-500/5 dark:border-white/8 border-amethyst-500/15 border hover:border-amethyst-500/30 transition-all duration-300"
                 >
                   <div className="w-8 h-8 rounded-lg bg-amethyst-500/15 flex items-center justify-center flex-shrink-0">
                     <Icon size={16} className="text-amethyst-400" />
                   </div>
-                  <span className="text-sm text-gray-300">{text}</span>
+                  <span className="text-sm dark:text-gray-300 text-gray-600">{text}</span>
                 </div>
               ))}
             </div>

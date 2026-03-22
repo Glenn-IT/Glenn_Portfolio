@@ -68,7 +68,7 @@ export default function Footer() {
                 Glenard<span className="text-amethyst-400">.</span>
               </span>
             </div>
-            <p className="text-gray-400 leading-relaxed mb-6 max-w-xs">
+            <p className="dark:text-gray-400 text-gray-600 leading-relaxed mb-6 max-w-xs">
               Software Developer · IT Specialist · Technical Support
               <br />
               Building solutions and solving tech challenges from the
@@ -98,7 +98,7 @@ export default function Footer() {
           {/* Links */}
           {Object.entries(footerLinks).map(([section, links]) => (
             <div key={section}>
-              <h4 className="text-sm font-bold text-white uppercase tracking-widest mb-4">
+              <h4 className="text-sm font-bold dark:text-white text-gray-900 uppercase tracking-widest mb-4">
                 {section}
               </h4>
               <ul className="space-y-3">
@@ -128,12 +128,12 @@ export default function Footer() {
 
         {/* Bottom bar */}
         <div className="border-t border-white/8 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-sm text-gray-500 flex items-center gap-2 flex-wrap justify-center sm:justify-start">
+          <p className="text-sm dark:text-gray-500 text-gray-500 flex items-center gap-2 flex-wrap justify-center sm:justify-start">
             © {currentYear} Glenard Pagurayan. Made with
             <Heart size={14} className="text-amethyst-500 fill-amethyst-500" />
             using React + Tailwind CSS.
           </p>
-          <div className="flex items-center gap-4 text-xs text-gray-600">
+          <div className="flex items-center gap-4 text-xs dark:text-gray-600 text-gray-500">
             <a
               href="https://github.com/Glenn-IT/Glenard-Portfolio"
               target="_blank"

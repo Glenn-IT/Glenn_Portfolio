@@ -14,14 +14,14 @@ const stats = [
   { icon: Code2, label: "Projects Built", value: "20+" },
   { icon: Shield, label: "Certifications", value: "8+" },
   { icon: Wrench, label: "IT Experience", value: "2+ yrs" },
-  { icon: Users, label: "Employees Supported", value: "200+" },
+  { icon: Users, label: "IT Support Experience", value: "2+ yrs" },
 ];
 
 const highlights = [
   { icon: Globe, text: "Philippines · Open to Remote & Relocation" },
   { icon: Star, text: "Google IT Support Professional Certified" },
   { icon: Code2, text: "Full-stack & Desktop App Developer" },
-  { icon: Wrench, text: "IT Support @ COMELEC — 200+ employees" },
+  { icon: Wrench, text: "IT Support Specialist @ COMELEC Region 2" },
   { icon: Trophy, text: "Programmer of the Year — CSU Class of 2023" },
   {
     icon: GraduationCap,
@@ -131,7 +131,8 @@ export default function About() {
                   <span className="text-white font-medium">
                     COMELEC Region 2
                   </span>
-                  , providing technical support to 200+ government employees. I
+                  , providing technical IT support and system maintenance in a
+                  government environment. I
                   specialize in troubleshooting, system maintenance, and user
                   support in high-stakes environments.
                 </p>

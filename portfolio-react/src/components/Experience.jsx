@@ -19,7 +19,7 @@ const experiences = [
     period: "July 2023 – May 2025",
     color: "amethyst",
     achievements: [
-      "Provided technical support for 200+ employees, resolving hardware, software, and network issues",
+      "Provided technical support to government employees, resolving hardware, software, and network issues",
       "Installed, configured, and maintained desktops, laptops, printers, and peripherals for government offices",
       "Assisted in setup and troubleshooting of election-related IT systems (Voting Counting Machines, servers)",
       "Managed user accounts, passwords, and access controls in compliance with government IT policies",

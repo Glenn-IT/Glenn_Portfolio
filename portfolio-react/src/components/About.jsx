@@ -201,8 +201,8 @@ export default function About() {
               <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-amethyst-500/20 to-slate_blue-500/10 flex items-center justify-center mx-auto mb-4 group-hover:shadow-glow-purple transition-all duration-300">
                 <Icon size={26} className="text-amethyst-400" />
               </div>
-              <p className="text-3xl font-bold text-white mb-1">{value}</p>
-              <p className="text-sm text-gray-400">{label}</p>
+              <p className="text-3xl font-bold dark:text-white text-gray-900 mb-1">{value}</p>
+              <p className="text-sm dark:text-gray-400 text-gray-600">{label}</p>
             </div>
           ))}
         </div>

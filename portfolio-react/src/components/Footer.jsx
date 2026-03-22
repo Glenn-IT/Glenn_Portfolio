@@ -52,7 +52,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="relative border-t border-white/8 bg-[#070715]">
+    <footer className="relative border-t border-white/8 dark:bg-[#070715] bg-gray-100">
       {/* Top glow */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-96 h-1 bg-gradient-to-r from-transparent via-amethyst-500/40 to-transparent" />
 
@@ -88,7 +88,7 @@ export default function Footer() {
                 >
                   <Icon
                     size={18}
-                    className="text-gray-400 group-hover:text-amethyst-400 transition-colors"
+                    className="dark:text-gray-400 text-gray-500 group-hover:text-amethyst-400 transition-colors"
                   />
                 </a>
               ))}

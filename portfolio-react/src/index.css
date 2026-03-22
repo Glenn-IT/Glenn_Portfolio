@@ -51,7 +51,8 @@
   html:not(.dark) .bg-\[\#0f0f2a\],
   html:not(.dark) .bg-\[\#0f0f2a\]\/90,
   html:not(.dark) .bg-\[\#0a0a1a\]\/40,
-  html:not(.dark) .bg-\[\#0a0a1a\]\/60 {
+  html:not(.dark) .bg-\[\#0a0a1a\]\/60,
+  html:not(.dark) .bg-\[\#070715\] {
     background-color: rgba(255, 255, 255, 0.95) !important;
   }
 

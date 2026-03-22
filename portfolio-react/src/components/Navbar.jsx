@@ -35,7 +35,7 @@ export default function Navbar({ darkMode, setDarkMode, activeSection }) {
       <nav
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
           scrolled
-            ? "bg-[#0a0a1a]/95 backdrop-blur-md border-b border-amethyst-500/10 shadow-lg"
+            ? "dark:bg-[#0a0a1a]/95 bg-white/95 backdrop-blur-md border-b dark:border-amethyst-500/10 border-amethyst-500/20 shadow-lg"
             : "bg-transparent"
         }`}
       >
@@ -50,7 +50,7 @@ export default function Navbar({ darkMode, setDarkMode, activeSection }) {
               <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-amethyst-500 to-slate_blue-500 flex items-center justify-center font-bold text-white text-lg shadow-glow-purple group-hover:shadow-card-hover transition-all duration-300">
                 G
               </div>
-              <span className="font-bold text-lg text-white group-hover:text-amethyst-400 transition-colors">
+              <span className="font-bold text-lg dark:text-white text-gray-900 group-hover:text-amethyst-400 transition-colors">
                 Glenn
                 <span className="text-amethyst-400">.</span>
               </span>
@@ -67,7 +67,7 @@ export default function Navbar({ darkMode, setDarkMode, activeSection }) {
                     href={link.href}
                     onClick={(e) => handleNavClick(e, link.href)}
                     className={`relative text-sm font-medium transition-all duration-300 group
-                      ${isActive ? "text-amethyst-400" : "text-gray-300 hover:text-amethyst-400"}`}
+                      ${isActive ? "text-amethyst-400" : "dark:text-gray-300 text-gray-700 hover:text-amethyst-400"}`}
                   >
                     {link.label}
                     <span
@@ -124,7 +124,7 @@ export default function Navbar({ darkMode, setDarkMode, activeSection }) {
 
         {/* Drawer */}
         <div
-          className={`absolute top-0 right-0 w-72 h-full bg-[#0f0f2a] border-l border-amethyst-500/20 shadow-2xl transition-transform duration-300 ${
+          className={`absolute top-0 right-0 w-72 h-full dark:bg-[#0f0f2a] bg-white border-l dark:border-amethyst-500/20 border-amethyst-500/30 shadow-2xl transition-transform duration-300 ${
             menuOpen ? "translate-x-0" : "translate-x-full"
           }`}
           onClick={(e) => e.stopPropagation()}
@@ -142,7 +142,7 @@ export default function Navbar({ darkMode, setDarkMode, activeSection }) {
                     className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-all duration-300 ${
                       isActive
                         ? "bg-amethyst-500/20 text-amethyst-400 border border-amethyst-500/30"
-                        : "text-gray-300 hover:bg-white/5 hover:text-amethyst-400"
+                        : "dark:text-gray-300 text-gray-700 hover:bg-amethyst-500/10 hover:text-amethyst-400"
                     }`}
                   >
                     {isActive && (
@@ -154,8 +154,8 @@ export default function Navbar({ darkMode, setDarkMode, activeSection }) {
               })}
             </div>
 
-            <div className="mt-auto pt-6 border-t border-white/10">
-              <p className="text-xs text-gray-500 text-center">
+            <div className="mt-auto pt-6 border-t dark:border-white/10 border-gray-200">
+              <p className="text-xs dark:text-gray-500 text-gray-400 text-center">
                 © 2025 Glenard Pagurayan
               </p>
             </div>

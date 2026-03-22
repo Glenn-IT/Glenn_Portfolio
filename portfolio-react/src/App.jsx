@@ -52,7 +52,7 @@ function App() {
   }, []);
 
   return (
-    <div className={`relative min-h-screen ${darkMode ? "dark" : ""}`}>
+    <div className="relative min-h-screen">
       <div className="fixed inset-0 bg-grid opacity-100 pointer-events-none z-0" />
       <ParticleBackground />
       <Navbar

@@ -7,10 +7,29 @@
     scroll-behavior: smooth;
   }
 
+  /* ── Dark mode (default) ── */
   body {
-    @apply bg-dark text-white font-sans antialiased;
-    background: linear-gradient(135deg, #0a0a1a 0%, #0d0d28 50%, #0a0a1a 100%);
+    @apply font-sans antialiased;
     min-height: 100vh;
+    transition: background 0.4s ease, color 0.4s ease;
+  }
+
+  html.dark body {
+    @apply text-white;
+    background: linear-gradient(135deg, #0a0a1a 0%, #0d0d28 50%, #0a0a1a 100%);
+  }
+
+  /* ── Light mode ── */
+  html:not(.dark) body {
+    @apply text-gray-900;
+    background: linear-gradient(135deg, #f0eeff 0%, #f8f7ff 50%, #eeeaff 100%);
+  }
+
+  html:not(.dark) .bg-grid {
+    background-image:
+      linear-gradient(rgba(155, 89, 182, 0.06) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(155, 89, 182, 0.06) 1px, transparent 1px);
+    background-size: 50px 50px;
   }
 
   * {
